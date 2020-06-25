@@ -11,12 +11,12 @@ namespace LojaVirtual
         static void Main(string[] args)
         {
             //OpcaoPagamento(1000);
-            AddProdutoNoCarrinho();
+            //AddProdutoNoCarrinho();
         }
 
         static void AddProdutoNoCarrinho()
         {
-            var produto = new Produto("iPhone 11",1000 );
+            //var produto = new Produto("iPhone 11",1000 );
             //produto = new Produto("TV50",1000);
         }
 

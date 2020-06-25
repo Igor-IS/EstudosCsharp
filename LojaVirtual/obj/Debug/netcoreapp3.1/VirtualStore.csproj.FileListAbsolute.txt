@@ -1,0 +1,13 @@
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\VirtualStore.csprojAssemblyReference.cache
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\VirtualStore.AssemblyInfoInputs.cache
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\VirtualStore.AssemblyInfo.cs
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\VirtualStore.csproj.CoreCompileInputs.cache
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\VirtualStore.exe
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\VirtualStore.deps.json
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\VirtualStore.runtimeconfig.json
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\VirtualStore.runtimeconfig.dev.json
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\VirtualStore.dll
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\VirtualStore.pdb
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\VirtualStore.dll
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\VirtualStore.pdb
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\VirtualStore.genruntimeconfig.cache

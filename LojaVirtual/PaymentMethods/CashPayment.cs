@@ -20,13 +20,11 @@ namespace VirtualStore.PaymentMethods
             DisplayValue();
         }
 
-<<<<<<< HEAD
-        private double GetDiscountAmount(double descount) =>  Payment.ShoppingListValue * descount;
-=======
-        private double GetDiscountAmount(double valorDesconto) =>  Payment.ShoppingListValue * valorDesconto;
->>>>>>> 8ee72d9840ae808773ce43ffc0d5ef8d03a32383
 
-        private void GetFullValueDiscount() => Payment.TotalPayable -= GetDiscountAmount(Descount);
+        private double SetDiscountAmount(double discount) =>  Payment.ShoppingListValue * discount;
+
+
+        private void GetFullValueDiscount() => Payment.TotalPayable -= SetDiscountAmount(Descount);
 
         private void DisplayValue() => Console.WriteLine($"\nValor Total a vista R${Payment.TotalPayable:F2}");
     }

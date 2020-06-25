@@ -4,35 +4,29 @@ using System.Collections.Generic;
 
 namespace LojaVirtual.Produtos
 {
-    class Produto
+    abstract class Produto
     {
-        internal string NomeProduto { get; set; }
-        internal double ValorProduto { get; set; }
-        internal List<string> ListaProdutos { get; set; } = new List<string>();
+        internal string ProductName { get; set; }
+        internal double ProductValue { get; set; }
+        internal string ProductDescrition { get; set; }
+        internal List<string> ProductList { get; set; } = new List<string>();
         
 
         internal Produto() { }
 
-        internal Produto(string nomeProduto, double valorProduto) 
+        internal Produto(string name, string descrition, double value) 
         {
-            NomeProduto = nomeProduto;
-            ValorProduto = valorProduto;
-            GetDadosProduto(nomeProduto, valorProduto);
+            ProductName = name;
+            ProductDescrition = descrition;
+            ProductValue = value;
         }
 
-        internal void GetDadosProduto(string nome, double valor)
-        {   
-            var DadosProduto = new Dictionary<string, Produto>()
-            {
-                { nome, new Produto {NomeProduto = nome, ValorProduto = valor}}
-            };
-
-            foreach (var prod in DadosProduto)
-            {
-                Console.WriteLine($"{prod.Key}");
-            }
-
+        internal void GetProductData(string name, string descrition, double value)
+        {
+            var productData = new Dictionary<string, string>();
+            productData.Add("Name", name);
+            productData.Add("Descrition", descrition);
+            productData.Add("Value", value.ToString());
         }
-
     }
 }

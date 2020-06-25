@@ -1,0 +1,26 @@
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.exe
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.deps.json
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.runtimeconfig.json
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.runtimeconfig.dev.json
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.dll
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.pdb
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csprojAssemblyReference.cache
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.AssemblyInfoInputs.cache
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.AssemblyInfo.cs
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csproj.CoreCompileInputs.cache
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.dll
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.pdb
+C:\Users\Igorv\Documents\CSharp\LojaVirtual\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.genruntimeconfig.cache
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.exe
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.deps.json
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.runtimeconfig.json
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.runtimeconfig.dev.json
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.dll
+C:\Git\Estudos CSharp\LojaVirtual\bin\Debug\netcoreapp3.1\LojaVirtual.pdb
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csprojAssemblyReference.cache
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.AssemblyInfoInputs.cache
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.AssemblyInfo.cs
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csproj.CoreCompileInputs.cache
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.dll
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.pdb
+C:\Git\Estudos CSharp\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.genruntimeconfig.cache

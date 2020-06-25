@@ -34,13 +34,5 @@ namespace LojaVirtual.Produtos
 
         }
 
-        internal void ExibirDescricaoProduto()
-        {
-            
-            foreach (var prod in ListaProdutos)
-            {
-                  Console.WriteLine($"{prod}");
-            }
-        }
     }
 }

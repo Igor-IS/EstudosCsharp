@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Git\\Estudos CSharp\\LojaVirtual\\LojaVirtual.csproj",
-      "projectName": "LojaVirtual",
-      "projectPath": "C:\\Git\\Estudos CSharp\\LojaVirtual\\LojaVirtual.csproj",
+      "projectUniqueName": "C:\\Git\\Estudos CSharp\\LojaVirtual\\VirtualStore.csproj",
+      "projectName": "VirtualStore",
+      "projectPath": "C:\\Git\\Estudos CSharp\\LojaVirtual\\VirtualStore.csproj",
       "packagesPath": "C:\\Users\\Igorv\\.nuget\\packages\\",
       "outputPath": "C:\\Git\\Estudos CSharp\\LojaVirtual\\obj\\",
       "projectStyle": "PackageReference",

@@ -2,7 +2,7 @@
 
 namespace VirtualStore.Entities.Enums
 {
-    enum OrderStatus : int
+    internal enum OrderStatus : int
     {
         PedingPayment = 0,
         Processing = 1,

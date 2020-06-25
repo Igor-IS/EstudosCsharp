@@ -2,6 +2,7 @@
 using VirtualStore.CustomerShoppings;
 using System;
 using VirtualStore.Products;
+using VirtualStore.Entities;
 
 namespace VirtualStore
 {
@@ -10,8 +11,11 @@ namespace VirtualStore
 
         static void Main(string[] args)
         {
-            PaymentOption(1000);
-            //AddProdutoNoCarrinho();
+            //PaymentOption(1000);
+            Order newRequest = new Order(7, true);
+
+
+            
         }
 
         static void TestGetProductData()

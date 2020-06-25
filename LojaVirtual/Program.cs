@@ -1,41 +1,41 @@
-﻿using LojaVirtual.FormasDePagamento;
-using LojaVirtual.CarrinhoProdutos;
+﻿using VirtualStore.PaymentMethods;
+using VirtualStore.CustomerShoppings;
 using System;
-using LojaVirtual.Produtos;
+using VirtualStore.Products;
 
-namespace LojaVirtual
+namespace VirtualStore
 {
     class Program
     {
 
         static void Main(string[] args)
         {
-            //OpcaoPagamento(1000);
+            PaymentOption(1000);
             //AddProdutoNoCarrinho();
         }
 
-        static void AddProdutoNoCarrinho()
+        static void TestGetProductData()
         {
-            //var produto = new Produto("iPhone 11",1000 );
-            //produto = new Produto("TV50",1000);
+            //var product = new Product("iPhone 11",1000 );
+            //product = new Product("TV50",1000);
         }
 
-        
-        static void OpcaoPagamento(double valor) // teste classes Pagamento/Avista/Parcelado 
+
+        static void PaymentOption(double value) // teste classes Pagamento/Avista/Parcelado 
         {
-            var valorCompra = new Pagamento(valor);
+            var purchasePrice = new Payment(value);
             
-            valorCompra.ExibirOpcoesPagmento();
-            byte opcao = byte.Parse(Console.ReadLine());
-            if (opcao <= 1)
+            purchasePrice.DisplayPaymentMethods();
+            byte option = byte.Parse(Console.ReadLine());
+            if (option <= 1)
             {
-                var desconto = new PagamentoAvista(valorCompra);
+                var descount = new CashPayment(purchasePrice);
             }
-            else if (opcao >= 2)
+            else if (option >= 2)
             {
-                valorCompra.GetNumeroDeParcelas();
-                int numeroParcelas = int.Parse(Console.ReadLine());
-                var dividirPagamento = new PagamentoParcelado(valorCompra, numeroParcelas);
+                purchasePrice.GetNumberOfInstallments();
+                int numberInstalments = int.Parse(Console.ReadLine());
+                var dividirPagamento = new PaymentInInstallments(purchasePrice, numberInstalments);
             }  
         }   
     }

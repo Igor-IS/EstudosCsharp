@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 
 
-namespace LojaVirtual.Produtos
+namespace VirtualStore.Products
 {
 <<<<<<< HEAD
-    abstract class Produto
+    abstract class Product 
     {
         internal string ProductName { get; set; }
         internal double ProductValue { get; set; }
@@ -20,10 +20,10 @@ namespace LojaVirtual.Produtos
 >>>>>>> 267041bfa7490c912a56911cc5c69687370788d9
         
 
-        internal Produto() { }
+        internal Product() { }
 
 <<<<<<< HEAD
-        internal Produto(string name, string descrition, double value) 
+        internal Product(string name, string descrition, double value) 
         {
             ProductName = name;
             ProductDescrition = descrition;

@@ -1,8 +1,8 @@
-﻿using System;
+﻿    using System;
 
 namespace VirtualStore.PaymentMethods
 {
-    class Payment
+    class Payment : PaymentConfirmation
     {
         internal double ShoppingListValue { get; private set; }
         internal double TotalPayable = 0;
@@ -23,10 +23,10 @@ namespace VirtualStore.PaymentMethods
 
         internal void DisplayPaymentMethods()
         {
-            Console.WriteLine($"\nFormas de Pagamento\n    [1] A Vista\n    [2] Parcelamento\nOpções de parcelamento: 10x sem juros ou 25x com juros");
-            Console.Write("Opção de pagamento: ");
+            Console.WriteLine($"\nPayment options\n    [1] Money or debit\n    [2] In installments\nOption of installments: 10x interest-free or 25x with interest");
+            Console.Write("Payment option: ");
         }
-        internal void GetNumberOfInstallments() => Console.Write("Quantidade de parcelas: ");
-        private void DisplayValue() => Console.WriteLine($"Valor total R${TotalPayable:F2}");
+        internal void GetNumberOfInstallments() => Console.Write("Number of installments: ");
+        private void DisplayValue() => Console.WriteLine($"Total value R${TotalPayable:F2}");
     }
 }

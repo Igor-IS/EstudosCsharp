@@ -16,7 +16,7 @@ namespace VirtualStore.PaymentMethods
 
         private void GetDiscount()
         {
-            GetFullValueDiscount();
+            ApplyDiscount();
             DisplayValue();
         }
 
@@ -24,8 +24,8 @@ namespace VirtualStore.PaymentMethods
         private double SetDiscountAmount(double discount) =>  Payment.ShoppingListValue * discount;
 
 
-        private void GetFullValueDiscount() => Payment.TotalPayable -= SetDiscountAmount(Descount);
+        private void ApplyDiscount() => Payment.TotalPayable -= SetDiscountAmount(Descount);
 
-        private void DisplayValue() => Console.WriteLine($"\nValor Total a vista R${Payment.TotalPayable:F2}");
+        private void DisplayValue() => Console.WriteLine($"\nTotal value in money or debit R${Payment.TotalPayable:F2}");
     }
 }

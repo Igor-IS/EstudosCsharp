@@ -11,11 +11,7 @@ namespace VirtualStore
 
         static void Main(string[] args)
         {
-            //PaymentOption(1000);
-            Order newRequest = new Order(7, true);
-
-
-            
+            PaymentOption(1000);
         }
 
         static void TestGetProductData()
@@ -28,18 +24,24 @@ namespace VirtualStore
         static void PaymentOption(double value) // teste classes Pagamento/Avista/Parcelado 
         {
             var purchasePrice = new Payment(value);
-            
+            var confirmation = new PaymentConfirmation();
+
+
             purchasePrice.DisplayPaymentMethods();
             byte option = byte.Parse(Console.ReadLine());
             if (option <= 1)
             {
                 var descount = new CashPayment(purchasePrice);
+                confirmation.GetConfirmationOfClient();
+                var newRequest = new Order(7,confirmation.Confirmation);
             }
             else if (option >= 2)
             {
                 purchasePrice.GetNumberOfInstallments();
-                int numberInstalments = int.Parse(Console.ReadLine());
-                var dividirPagamento = new PaymentInInstallments(purchasePrice, numberInstalments);
+                int numberOfInstalments = int.Parse(Console.ReadLine());
+                var intallmentMethods = new PaymentInInstallments(purchasePrice, numberOfInstalments);
+                confirmation.GetConfirmationOfClient();
+                var newRequest = new Order(7, confirmation.Confirmation);
             }  
         }   
     }

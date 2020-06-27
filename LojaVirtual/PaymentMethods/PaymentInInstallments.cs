@@ -44,7 +44,7 @@ namespace VirtualStore.PaymentMethods
         private void SetInstallmentWithInterest()
         {
             SetInstallmentNumber();
-            ApllyInteretToTheAmount();
+            ApllyInterestToTheAmount();
             InstallmentsValue = Payment.TotalPayable / NumberOfInstallments;
         }
 
@@ -62,7 +62,7 @@ namespace VirtualStore.PaymentMethods
         }
 
         private double GetInterest(double interest) => Payment.ShoppingListValue * interest;
-        private void ApllyInteretToTheAmount() => Payment.TotalPayable += GetInterest(Interest);
-        private void DisplayValue() => Console.WriteLine($"\nValor Total R${Payment.TotalPayable:F2}\nParcelado em {NumberOfInstallments}x R${InstallmentsValue:F2}");
+        private void ApllyInterestToTheAmount() => Payment.TotalPayable += GetInterest(Interest);
+        private void DisplayValue() => Console.WriteLine($"\nTotal value R${Payment.TotalPayable:F2}\nInstallments in {NumberOfInstallments}x R${InstallmentsValue:F2}");
     }
 }

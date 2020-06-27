@@ -1,16 +1,17 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using VirtualStore.Products;
-using System.Text;
 
 namespace VirtualStore.CustomerShoppings
 {
     class CustomerShoppingList
     {
-        internal double AmoutToPay { get; set; }
+        internal double AmoutToPay { get; private set; }
         internal List<Product> ShoppingList { get; set; }
         internal Product Produto { get; set; }
         internal int QuantityTheProduct { get; set; }
+
         internal CustomerShoppingList() { }
 
         internal CustomerShoppingList(Product product)
@@ -18,15 +19,16 @@ namespace VirtualStore.CustomerShoppings
             Produto = product;
         }
 
-        internal void GetProduct()
+        internal void GetProduct(List<Product> products)
         {
-
+            ShoppingList.AddRange(products);
         }
 
 
-        internal void RemoveProduct(string nomeProduto)
+        internal void RemoveProduct(List<Product> nameProduct)
         {
-            
+            //var product = bd.Product.Where(_ => _.ProductName == nameProduct); implementar com BD
+            //ShoppingList.Remove(nameProduct);
         }
 
 

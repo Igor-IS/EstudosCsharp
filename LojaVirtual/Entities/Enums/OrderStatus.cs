@@ -2,12 +2,12 @@
 
 namespace VirtualStore.Entities.Enums
 {
-    internal enum OrderStatus : int
+    internal enum OrderStatus
     {
-        PaymentConfirmed = 0,
-        PedingPayment = 1,
-        Processing = 2,
-        Shipped = 3,
-        Delivered = 4
+        PaymentConfirmed,
+        PedingPayment,
+        Processing,
+        Shipped,
+        Delivered
     }
 }

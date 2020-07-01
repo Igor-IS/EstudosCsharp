@@ -1,8 +1,9 @@
-﻿using VirtualStore.PaymentMethods;
-using VirtualStore.CustomerShoppings;
+﻿using VirtualStore.Entities.PaymentMethods;
+using VirtualStore.Entities.CustomerShoppings;
 using System;
-using VirtualStore.Products;
-using VirtualStore.Entities;
+using VirtualStore.Entities.Products;
+using VirtualStore.Entities.Orders;
+using VirtualStore.Entities.Enums;
 
 namespace VirtualStore
 {
@@ -11,13 +12,22 @@ namespace VirtualStore
 
         static void Main(string[] args)
         {
-            PaymentOption(1000);
+            //PaymentOption(1000);
+            TestGetProductData();
         }
 
-        static void TestGetProductData()
+        static void TestGetProductData() // criar um banco de dados para armazenar os cadastros!
         {
-            //var product = new Product("iPhone 11",1000 );
-            //product = new Product("TV50",1000);
+            var newRegister = new ProductStock();
+
+            var xBurger = new RegisterNewProduct(1, "X-Burger", "Delicious burger", 18.50, ProductType.Food);
+            var drinkBeer = new RegisterNewProduct(2, "Duff Beer", "Pure malt beer", 9.72, ProductType.Drink);
+            var xEgg = new RegisterNewProduct(3, "X-Egg", "Delicious Eggs with cheese", 15.50, ProductType.Food);
+            newRegister.AddNewProduct(xBurger);
+            newRegister.AddNewProduct(drinkBeer);
+            newRegister.AddNewProduct(xEgg);
+
+            newRegister.DisplayStock();
         }
 
 
@@ -38,8 +48,8 @@ namespace VirtualStore
             else if (option >= 2)
             {
                 purchasePrice.GetNumberOfInstallments();
-                int numberOfInstalments = int.Parse(Console.ReadLine());
-                var intallmentMethods = new PaymentInInstallments(purchasePrice, numberOfInstalments);
+                int numberOfInstallments = int.Parse(Console.ReadLine());
+                var intallmentMethods = new PaymentInInstallments(purchasePrice, numberOfInstallments);
                 confirmation.GetConfirmationOfClient();
                 var newRequest = new Order(7, confirmation.Confirmation);
             }  
